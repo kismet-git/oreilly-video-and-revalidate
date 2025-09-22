@@ -1,0 +1,24 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "oreilly/kaltura-video",
+  "title": "Kaltura Video (O’Reilly)",
+  "category": "embed",
+  "icon": "video-alt3",
+  "description": "Consent-gated, lazy-loaded Kaltura player.",
+  "keywords": ["kaltura", "video", "embed"],
+  "supports": {
+    "html": false,
+    "align": ["wide", "full"]
+  },
+  "attributes": {
+    "partnerId": { "type": "string", "default": "0000" },
+    "entryId":   { "type": "string", "default": "abcd1234" },
+    "poster":    { "type": "string", "default": "" },
+    "autoplay":  { "type": "boolean", "default": false },
+    "consentRequired": { "type": "boolean", "default": true }
+  },
+  "editorScript": "oreilly-kaltura-editor",
+  "style": "oreilly-kaltura-style",
+  "viewScript": "oreilly-kaltura-view"
+}

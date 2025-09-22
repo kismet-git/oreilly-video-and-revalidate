@@ -1,0 +1,10 @@
+# macOS
+.DS_Store
+
+# Logs
+*.log
+
+# Node/Build (none here by default, kept for safety)
+node_modules/
+dist/
+build/
